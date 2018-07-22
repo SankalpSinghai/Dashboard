@@ -1,0 +1,46 @@
+#caption{
+    font-size: 48px;
+    padding-bottom: 5px;
+    background: lightblue;
+    color: red; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+table{
+    width: 50%;
+    height: 50%;
+    border-collapse: collapse;
+}
+
+ th, td {
+    padding: 7px;    
+    
+}
+
+.thumbs-up{
+    padding-top: 2%;
+    padding-right: 2%;
+}
+
+.service-level-percent{
+    font-size: 30px;
+    color: lightgreen;
+}
+
+#service-level-text{
+    color: darkgray;
+    font-size: 20px;
+}
+
+.time{
+    color: darkblue;
+    font-weight: bold;
+    padding-left: 5%;
+    font-size: 20px;
+}
+
+#caption-time{
+    font-size: 15px;
+    color: darkgray;
+    font-weight: bold;
+}

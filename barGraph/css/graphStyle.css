@@ -1,0 +1,65 @@
+
+@-webkit-keyframes grow-width {
+  from {
+    width: 0;
+  }
+}
+@keyframes grow-width {
+  from {
+    width: 0;
+  }
+}
+body {
+  font-family: "Open Sans", Arial;
+  background: white;
+}
+
+h3 {
+  text-align: center;
+  color: red;
+  font-size: 30px;
+  background: lightblue;
+  margin-top: .4px;
+}
+
+p {
+  font-size: 13px;
+}
+
+section {
+  vertical-align: top;
+  margin-top: 20px;
+}
+
+section:nth-of-type(odd) {
+  margin-right: 20px;
+}
+
+.style-1 {
+  list-style-type: none;
+  padding: 0;
+  width: 580px;
+  padding-left: 15%;
+  padding-top: 30px;
+  transform: scale(1.4);
+}
+.style-1 li {
+  position: relative;
+  height: 50px;
+}
+.style-1 li em, .style-1 li span {
+  display: block;
+  border-bottom: 5px solid #FFE5E5;
+  padding-bottom: 5px;
+}
+.style-1 li em {
+  font-style: normal;
+  border-bottom-color: darkblue;
+  position: absolute;
+  overflow: visible;
+}
+.style-1 li span {
+  text-align: right;
+}
+
+

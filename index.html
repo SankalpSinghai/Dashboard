@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="Activity-Summary/css/activityStyle.css">
+    <link rel="stylesheet" href="Group-Statistics/css/statisticsStyle.css">
+    <link rel="stylesheet" href="Dashboard/css/dashboardStyle.css">
+    <link rel="stylesheet" href="barGraph/css/graphStyle.css">
+</head>
+<body>
+    <table >
+        <tr>
+            <!-- ACTIVITY SUMMARY -->
+            <td id = "main-cell" height = "350" width = "725">
+                <div id="activity">
+                    <table>
+                        <tr>
+                            <caption id = "caption-activity">Activity Summary</caption>
+                        </tr>
+                        <div class = "content">
+                            <tr id = "header-activity" height = "46.8"> 
+                                <th>Agent Name</th>
+                                <th>Average Call Time</th> 
+                                <th>Number of Calls</th>
+                            </tr>
+                            <tr id = "employee-activity" height = "46.8">
+                                <td>Jill Smith</td>
+                                <td>4:03s</td>
+                                <td>50</td>
+                            </tr>
+                            <tr id = "employee-activity" height = "46.8">
+                                <td>Eve Jackson</td>
+                                <td>3:40s</td>
+                                <td>94</td>
+                            </tr>
+                            <tr id = "employee-activity" height = "46.8">
+                                <td>John Doe</td>
+                                <td>2:34s</td>
+                                <td>80</td>
+                            </tr>
+                            
+                        </div>
+                    </table>   
+                </div>
+            </td>
+            <!-- DASHBOARD -->
+            <td id = "main-cell" height = "350" width = "725">
+                <div id="dashboard">
+                    <table>
+                        <tr>
+                            <caption id = "caption">Dashboard</caption>
+                        </tr>
+                        <div class = "content">
+                            <tr id = "header-caption">
+                                <td><i class = "fa fa-lock fa-2x"></i></td>
+                                <td class = "caption-dashboard">Logged In</td>
+                                <td class = "number-dashboard">4</td>
+                            </tr>
+                            <tr>
+                                <td><i class = "fa fa-unlock fa-2x" ></i></td>
+                                <td class = "caption-dashboard">Logged Out</td>
+                                <td class = "number-dashboard">1</td>
+                            </tr>
+                            <tr>
+                                <td><i class = "fa fa-headphones fa-2x"></i></td>
+                                <td class = "caption-dashboard">Available</td>
+                                <td class = "number-dashboard">8</td>
+                            </tr>
+                            <tr>
+                                <td><i class = "fa fa-phone fa-2x"></i></td>
+                                <td class = "caption-dashboard">On Call</td>
+                                <td class = "number-dashboard">2</td>
+                            </tr>
+                        </div>
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <!-- GROUP STATISTICS -->
+            <td id = "main-cell" height = "350" width = "725">
+                <div id="group-statistics">
+                    <table>
+                        <tr>
+                            <caption id = "caption">Group Statistics</caption>
+                        </tr>
+                        <div class = "content">
+                            <tr id = "service-level">
+                                <th rowspan = "4"><i class = "fa fa-thumbs-up fa-2x thumbs-up"></i><span class = "service-level-percent">80%</span><p id = "service-level-text">Service Level</p></th>
+                            </tr>
+                            <tr>
+                                <td><i class = "far fa-clock fa-2x"></i><span class = "time">00:38</span><p id = "caption-time">Average Speed Answer</p></td>
+                                <td><i class = "fa fa-phone-volume fa-2x"></i><span class = "time">03:57</span><p id = "caption-time">Average Call Duration</p></td>
+                            </tr>
+                            <tr>
+                                <td><i class = "fa fa-phone-slash fa-2x"></i><span class = "time">04:54</span><p id = "caption-time">Average Abandonment Time</p></td>
+                                <td> <i class = "fa fa-tty fa-2x"></i><span class = "time">6%</span><p id = "caption-time">Abandonment Rate</p></td>
+                            </tr>
+                            
+                        </div>
+                    </table>
+                </div>
+            </td>
+            <!-- GRAPH -->
+            <td id = "main-cell" height = "350" width = "725">
+                <div id="graph">
+                    <main>
+                        <h3>Graphs</h3>
+                        <section>
+                        <ul class="style-1">
+                            <li>
+                                <em>Total Calls</em>
+                                <span>53</span>
+                            </li>
+                            <li>
+                                <em>Queue</em>
+                                <span>0</span>
+                            </li>
+                            <li>
+                                <em>Abandoned</em>
+                                <span>8</span>
+                            </li>
+                        </ul>
+                        </section>
+                    </main>
+                <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+                <script  src="barGraph/js/barGraph.js"></script>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

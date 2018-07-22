@@ -1,0 +1,47 @@
+#caption{
+    font-size: 48px;
+    padding-bottom: 5px;
+    background: lightblue;
+    color: red; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+table{
+    width: 100%;
+    height: 50%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 7px;
+    text-align: left;
+    
+}
+
+.fa-lock{
+    color: green;
+}
+
+.fa-unlock{
+    color: red;
+}
+
+.fa-phone{
+    color: gold;
+}
+
+.fa-headphones{
+    color: lightgreen;
+}
+
+.number-dashboard{
+    color: darkblue;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.caption-dashboard{
+    font-weight: bold;
+    font-size: 20px;
+}
